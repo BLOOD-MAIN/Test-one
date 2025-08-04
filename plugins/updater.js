@@ -37,7 +37,7 @@ cmd({
         }, { quoted: mek });
 
         // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/caseyweb/CASEYRHODES-XMD/commits/main");
+        const { data: commitData } = await axios.get("https://api.github.com/repos/BLOOD-MAIN/Blood-XMD/commits/main");
         const latestCommitHash = commitData.sha;
         const currentHash = await getCommitHash();
 
