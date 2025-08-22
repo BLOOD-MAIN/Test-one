@@ -56,7 +56,7 @@ cmd({
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");
-        const { data: zipData } = await axios.get("https://github.com/caseyweb/CASEYRHODES-XMD/archive/main.zip", { 
+        const { data: zipData } = await axios.get("https://github.com/BLOOD-MAIN/Blood-XMD/archive/main.zip", { 
             responseType: "arraybuffer",
             headers: {
                 'User-Agent': 'CASEYRHODES-XMD-Bot'
