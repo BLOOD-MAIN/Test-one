@@ -37,7 +37,7 @@ cmd({
         }, { quoted: mek });
 
         // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/BLOOD-MAIN/Blood-XMD/commits/main");
+        const { data: commitData } = await axios.get("https://api.github.com/repos/BLOOD-MAIN/Test-one/commits/main");
         const latestCommitHash = commitData.sha;
         const currentHash = await getCommitHash();
 
@@ -56,7 +56,7 @@ cmd({
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");
-        const { data: zipData } = await axios.get("https://github.com/BLOOD-MAIN/Blood-XMD/archive/main.zip", { 
+        const { data: zipData } = await axios.get("https://github.com/BLOOD-MAIN/Test-one/archive/main.zip", { 
             responseType: "arraybuffer",
             headers: {
                 'User-Agent': 'CASEYRHODES-XMD-Bot'
