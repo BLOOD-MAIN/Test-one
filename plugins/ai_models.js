@@ -11,7 +11,8 @@ cmd({
 },
 async (conn, mek, m, { from, args, q, reply, react }) => {
     try {
-        if (!q) return reply("Please provide a message for OpenAI.\nExample: `.openai Hello`");
+           if (!prompt) return reply('⚠️ කරුණාකර prompt එක දාන්න. උදා: *.si මට ලිව්වම් කෙටියෙන් කියලා දෙන්න*');
+
 
         const apiUrl = `https://vapis.my.id/api/openai?q=${encodeURIComponent(q)}`;
         const { data } = await axios.get(apiUrl);
